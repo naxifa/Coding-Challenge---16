@@ -1,7 +1,7 @@
 
 //Create the App Component
 
-import React from "react"
+import React, { useState } from 'react';
 import ProductList from "./ProductList"
 import AddProductForm from "./AddProductForm"
 
@@ -15,6 +15,11 @@ const products = [
       { id: 3, name: "Anti-Aging Moisturizer", price: 35, description: "Formulated with Retinol to promote skin renewal and reduce signs of aging." }
 ];
 
+// Function to add a new product
+const addProduct = (newProduct) => {
+    setProducts([...products, { ...newProduct, id: products.length + 1 }]);
+  };
+  
 return (
     <div className="App">
          <h1>Skincare Products Dashboard</h1>
