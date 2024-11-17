@@ -1,4 +1,3 @@
-
 //Create the App Component
 
 import React, { useState } from 'react'; // Make sure to import useState
