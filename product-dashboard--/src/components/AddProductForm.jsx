@@ -26,3 +26,4 @@ function AddProductForm({ onAddProduct }) {
 }
 
 export default AddProductForm;
+

@@ -1,0 +1,78 @@
+body, .app {
+  background-color: #F4C2C2; /* Baby pink background */
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product-box {
+  width: calc(33% - 40px); 
+  margin: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-box h2 {
+  color: #333;
+}
+
+.product-box p {
+  color: #666;
+}
+
+.price {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .product-box {
+    width: calc(50% - 40px); /* Larger on small screens */
+  }
+}
+
+.add-product-form {
+  background: #f8f8f8;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.add-product-form input,
+.add-product-form textarea {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-product-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-product-form button:hover {
+  background-color: #366bf0;
+}
